@@ -30,7 +30,7 @@ const AuthForm = () => {
     // isLogin == true tức là người dùng đã có tài khoản, nếu chưa có (isLogin == false) thì chuyển sang bước sign up
     setIsLoading(true);
     let url;
-    if (isLogin) {
+    if (isLogin) { // lấy từ firebase auth rest API (search google)
       url =
         "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=        AIzaSyC77uu1kHSSn4v4evzJp1Z7XUTJFRNalBo";
     } else {
